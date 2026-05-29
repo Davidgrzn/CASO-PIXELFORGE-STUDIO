@@ -245,7 +245,7 @@ sudo wg-quick up wg0
 
 ##  Documentación
 
-- **[SECURITY-TOOLS-GUIDE.md](Proyecto%20Final/SECURITY-TOOLS-GUIDE.md)** - Guía detallada de herramientas
+- **[SECURITY-TOOLS-GUIDE.md](Proyecto%20Preliminar/SECURITY-TOOLS-GUIDE.md)** - Guía detallada de herramientas
 - **[INFORME_IEEE_DRAFT.md](INFORME_IEEE_DRAFT.md)** - Borrador del informe formal
 - **[backend/README.md](backend/README.md)** - Documentación backend
 - **[frontend/README.md](frontend/README.md)** - Documentación frontend
