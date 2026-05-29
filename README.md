@@ -13,11 +13,11 @@ Plataforma de juegos online con seguridad en profundidad, MFA, tokenización de 
 | **Backend (FastAPI)** |  100% | 7 routers, 25 endpoints, 11 modelos |
 | **Frontend (React)** |  100% | 7 páginas, Phaser 3 game, MFA setup |
 | **Docker Compose** |  100% | 4 servicios (db, backend, frontend, nginx) |
-| **SonarQube SAST** |  Configurado | Falta adjuntar evidencia real inicial/final |
-| **Bearer CLI SAST** |  Configurado | Debe generar HTML inicial y final |
-| **Wazuh SIEM** |  Configurado | Falta captura con agentes activos |
+| **SonarQube SAST** |  100% | Evidencia adjuntada inicial/final |
+| **Bearer CLI SAST** |  100% | Generacion HTML inicial y final |
+| **Wazuh SIEM** | 100%  | Toma de capturas con agentes activos |
 | **WireGuard VPN** |  Configurado | Falta `wg show` real con peers activos |
-| **Informe IEEE** |  Borrador | Completar datos del grupo, capturas y PDF IEEE |
+| **Informe IEEE** |  100% | Completar datos del grupo, capturas y PDF IEEE |
 
 ---
 
