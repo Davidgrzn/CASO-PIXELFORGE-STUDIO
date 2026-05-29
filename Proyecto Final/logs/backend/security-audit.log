@@ -1,0 +1,143 @@
+AUDIT_EVENT {"event_type": "login_failed", "user_id": null, "username": null, "ip_address": "172.18.0.1", "details": {"identifier": "astroplayer123"}}
+AUDIT_EVENT {"event_type": "login_step1_mfa_required", "user_id": 4, "username": "astroplayer123", "ip_address": "172.18.0.1", "details": {}}
+AUDIT_EVENT {"event_type": "mfa_login_failed", "user_id": 4, "username": "astroplayer123", "ip_address": "172.18.0.1", "details": {}}
+AUDIT_EVENT {"event_type": "login_mfa_success", "user_id": 4, "username": "astroplayer123", "ip_address": "172.18.0.1", "details": {}}
+AUDIT_EVENT {"event_type": "login_step1_mfa_required", "user_id": 4, "username": "astroplayer123", "ip_address": "172.18.0.1", "details": {}}
+AUDIT_EVENT {"event_type": "player_register", "user_id": 8, "username": "cr7", "ip_address": "172.18.0.1", "details": {"email": "cr7@gmail.com"}}
+AUDIT_EVENT {"event_type": "login_success", "user_id": 8, "username": "cr7", "ip_address": "172.18.0.1", "details": {}}
+AUDIT_EVENT {"event_type": "mfa_oauth2_setup_started", "user_id": 8, "username": "cr7", "ip_address": "172.18.0.1", "details": {"provider": "google"}}
+AUDIT_EVENT {"event_type": "mfa_oauth2_email_mismatch", "user_id": 8, "username": "cr7", "ip_address": "172.18.0.1", "details": {"provider_email": "goergecodexsiu@gmail.com"}}
+AUDIT_EVENT {"event_type": "logout", "user_id": 8, "username": "cr7", "ip_address": "172.18.0.1", "details": {}}
+AUDIT_EVENT {"event_type": "player_register", "user_id": 9, "username": "georgecodexsiu", "ip_address": "172.18.0.1", "details": {"email": "georgecodexsiu@gmail.com"}}
+AUDIT_EVENT {"event_type": "login_success", "user_id": 9, "username": "georgecodexsiu", "ip_address": "172.18.0.1", "details": {}}
+AUDIT_EVENT {"event_type": "mfa_oauth2_setup_started", "user_id": 9, "username": "georgecodexsiu", "ip_address": "172.18.0.1", "details": {"provider": "google"}}
+AUDIT_EVENT {"event_type": "mfa_oauth2_email_mismatch", "user_id": 9, "username": "georgecodexsiu", "ip_address": "172.18.0.1", "details": {"provider_email": "goergecodexsiu@gmail.com"}}
+AUDIT_EVENT {"event_type": "logout", "user_id": 9, "username": "georgecodexsiu", "ip_address": "172.18.0.1", "details": {}}
+AUDIT_EVENT {"event_type": "player_register", "user_id": 10, "username": "goergecodexsiu", "ip_address": "172.18.0.1", "details": {"email": "goergecodexsiu@gmail.com"}}
+AUDIT_EVENT {"event_type": "login_success", "user_id": 10, "username": "goergecodexsiu", "ip_address": "172.18.0.1", "details": {}}
+AUDIT_EVENT {"event_type": "mfa_oauth2_setup_started", "user_id": 10, "username": "goergecodexsiu", "ip_address": "172.18.0.1", "details": {"provider": "google"}}
+AUDIT_EVENT {"event_type": "mfa_activated", "user_id": 10, "username": "goergecodexsiu", "ip_address": "172.18.0.1", "details": {"method": "oauth2", "provider": "google"}}
+AUDIT_EVENT {"event_type": "logout", "user_id": 10, "username": "goergecodexsiu", "ip_address": "172.18.0.1", "details": {}}
+AUDIT_EVENT {"event_type": "login_success", "user_id": 1, "username": "admin", "ip_address": "172.18.0.1", "details": {}}
+AUDIT_EVENT {"event_type": "mfa_oauth2_setup_started", "user_id": 1, "username": "admin", "ip_address": "172.18.0.1", "details": {"provider": "google"}}
+AUDIT_EVENT {"event_type": "mfa_oauth2_email_mismatch", "user_id": 1, "username": "admin", "ip_address": "172.18.0.1", "details": {"provider_email": "santioh55@gmail.com"}}
+AUDIT_EVENT {"event_type": "admin_pdf_generated", "user_id": 1, "username": "admin", "ip_address": "172.18.0.1", "details": {"target_player_id": 10, "target_username": "goergecodexsiu"}}
+AUDIT_EVENT {"event_type": "logout", "user_id": 1, "username": "admin", "ip_address": "172.18.0.1", "details": {}}
+AUDIT_EVENT {"event_type": "player_register", "user_id": 11, "username": "astroplayer2", "ip_address": "172.18.0.1", "details": {"email": "astroplayer2@gmail.com"}}
+AUDIT_EVENT {"event_type": "login_success", "user_id": 11, "username": "astroplayer2", "ip_address": "172.18.0.1", "details": {}}
+AUDIT_EVENT {"event_type": "score_submitted", "user_id": 11, "username": "astroplayer2", "ip_address": "172.18.0.1", "details": {"score": 80, "level": 1}}
+AUDIT_EVENT {"event_type": "mfa_setup_initiated", "user_id": 11, "username": "astroplayer2", "ip_address": "172.18.0.1", "details": {}}
+AUDIT_EVENT {"event_type": "mfa_confirm_failed", "user_id": 11, "username": "astroplayer2", "ip_address": "172.18.0.1", "details": {}}
+AUDIT_EVENT {"event_type": "mfa_activated", "user_id": 11, "username": "astroplayer2", "ip_address": "172.18.0.1", "details": {"method": "totp"}}
+AUDIT_EVENT {"event_type": "card_registered", "user_id": 11, "username": "astroplayer2", "ip_address": "172.18.0.1", "details": {"card_token": "tok_4b3b46e3ee344158935d324f2431b778", "last_four": "1111", "type": "visa"}}
+AUDIT_EVENT {"event_type": "token_purchase_result", "user_id": 11, "username": "astroplayer2", "ip_address": "172.18.0.1", "details": {"package": "basico", "tokens": 10, "price": 10000, "result": "aprobada", "rejection_reason": null, "last_four": "1111"}}
+AUDIT_EVENT {"event_type": "token_purchase_result", "user_id": 11, "username": "astroplayer2", "ip_address": "172.18.0.1", "details": {"package": "estandar", "tokens": 50, "price": 45000, "result": "aprobada", "rejection_reason": null, "last_four": "1111"}}
+AUDIT_EVENT {"event_type": "token_purchase_result", "user_id": 11, "username": "astroplayer2", "ip_address": "172.18.0.1", "details": {"package": "premium", "tokens": 120, "price": 100000, "result": "aprobada", "rejection_reason": null, "last_four": "1111"}}
+AUDIT_EVENT {"event_type": "token_purchase_result", "user_id": 11, "username": "astroplayer2", "ip_address": "172.18.0.1", "details": {"package": "premium", "tokens": 120, "price": 100000, "result": "aprobada", "rejection_reason": null, "last_four": "1111"}}
+AUDIT_EVENT {"event_type": "token_purchase_result", "user_id": 11, "username": "astroplayer2", "ip_address": "172.18.0.1", "details": {"package": "premium", "tokens": 120, "price": 100000, "result": "aprobada", "rejection_reason": null, "last_four": "1111"}}
+AUDIT_EVENT {"event_type": "token_purchase_result", "user_id": 11, "username": "astroplayer2", "ip_address": "172.18.0.1", "details": {"package": "premium", "tokens": 120, "price": 100000, "result": "aprobada", "rejection_reason": null, "last_four": "1111"}}
+AUDIT_EVENT {"event_type": "token_purchase_result", "user_id": 11, "username": "astroplayer2", "ip_address": "172.18.0.1", "details": {"package": "premium", "tokens": 120, "price": 100000, "result": "aprobada", "rejection_reason": null, "last_four": "1111"}}
+AUDIT_EVENT {"event_type": "token_purchase_result", "user_id": 11, "username": "astroplayer2", "ip_address": "172.18.0.1", "details": {"package": "premium", "tokens": 120, "price": 100000, "result": "aprobada", "rejection_reason": null, "last_four": "1111"}}
+AUDIT_EVENT {"event_type": "token_purchase_result", "user_id": 11, "username": "astroplayer2", "ip_address": "172.18.0.1", "details": {"package": "premium", "tokens": 120, "price": 100000, "result": "aprobada", "rejection_reason": null, "last_four": "1111"}}
+AUDIT_EVENT {"event_type": "token_purchase_result", "user_id": 11, "username": "astroplayer2", "ip_address": "172.18.0.1", "details": {"package": "premium", "tokens": 120, "price": 100000, "result": "aprobada", "rejection_reason": null, "last_four": "1111"}}
+AUDIT_EVENT {"event_type": "token_purchase_result", "user_id": 11, "username": "astroplayer2", "ip_address": "172.18.0.1", "details": {"package": "premium", "tokens": 120, "price": 100000, "result": "aprobada", "rejection_reason": null, "last_four": "1111"}}
+AUDIT_EVENT {"event_type": "token_purchase_result", "user_id": 11, "username": "astroplayer2", "ip_address": "172.18.0.1", "details": {"package": "premium", "tokens": 120, "price": 100000, "result": "aprobada", "rejection_reason": null, "last_four": "1111"}}
+AUDIT_EVENT {"event_type": "shop_item_purchased", "user_id": 11, "username": "astroplayer2", "ip_address": "172.18.0.1", "details": {"item_id": 10, "item_name": "Mega Boost x3", "tokens_spent": 40, "balance_after": 1220}}
+AUDIT_EVENT {"event_type": "shop_item_purchased", "user_id": 11, "username": "astroplayer2", "ip_address": "172.18.0.1", "details": {"item_id": 4, "item_name": "Fire Trail", "tokens_spent": 20, "balance_after": 1200}}
+AUDIT_EVENT {"event_type": "shop_item_purchased", "user_id": 11, "username": "astroplayer2", "ip_address": "172.18.0.1", "details": {"item_id": 1, "item_name": "Phoenix Ship", "tokens_spent": 30, "balance_after": 1170}}
+AUDIT_EVENT {"event_type": "shop_item_purchased", "user_id": 11, "username": "astroplayer2", "ip_address": "172.18.0.1", "details": {"item_id": 2, "item_name": "Galaxy Ship", "tokens_spent": 50, "balance_after": 1120}}
+AUDIT_EVENT {"event_type": "shop_item_purchased", "user_id": 11, "username": "astroplayer2", "ip_address": "172.18.0.1", "details": {"item_id": 5, "item_name": "Ice Trail", "tokens_spent": 20, "balance_after": 1100}}
+AUDIT_EVENT {"event_type": "shop_item_purchased", "user_id": 11, "username": "astroplayer2", "ip_address": "172.18.0.1", "details": {"item_id": 3, "item_name": "Stealth Ship", "tokens_spent": 80, "balance_after": 1020}}
+AUDIT_EVENT {"event_type": "shop_item_purchased", "user_id": 11, "username": "astroplayer2", "ip_address": "172.18.0.1", "details": {"item_id": 6, "item_name": "Rainbow Trail", "tokens_spent": 35, "balance_after": 985}}
+AUDIT_EVENT {"event_type": "shop_item_purchased", "user_id": 11, "username": "astroplayer2", "ip_address": "172.18.0.1", "details": {"item_id": 9, "item_name": "Score Boost x2", "tokens_spent": 15, "balance_after": 970}}
+AUDIT_EVENT {"event_type": "shop_item_purchased", "user_id": 11, "username": "astroplayer2", "ip_address": "172.18.0.1", "details": {"item_id": 8, "item_name": "Plasma Shield", "tokens_spent": 45, "balance_after": 925}}
+AUDIT_EVENT {"event_type": "shop_item_purchased", "user_id": 11, "username": "astroplayer2", "ip_address": "172.18.0.1", "details": {"item_id": 7, "item_name": "Energy Shield", "tokens_spent": 25, "balance_after": 900}}
+AUDIT_EVENT {"event_type": "personal_data_exported_pdf", "user_id": 11, "username": "astroplayer2", "ip_address": "172.18.0.1", "details": {}}
+AUDIT_EVENT {"event_type": "card_deleted", "user_id": 11, "username": "astroplayer2", "ip_address": "172.18.0.1", "details": {"last_four": "1111"}}
+AUDIT_EVENT {"event_type": "logout", "user_id": 11, "username": "astroplayer2", "ip_address": "172.18.0.1", "details": {}}
+AUDIT_EVENT {"event_type": "login_success", "user_id": 1, "username": "admin", "ip_address": "172.18.0.1", "details": {}}
+AUDIT_EVENT {"event_type": "player_status_updated", "user_id": 1, "username": "admin", "ip_address": "172.18.0.1", "details": {"target_player_id": 5, "target_username": "qa201190374", "old_status": "activo", "new_status": "suspendido"}}
+AUDIT_EVENT {"event_type": "admin_pdf_generated", "user_id": 1, "username": "admin", "ip_address": "172.18.0.1", "details": {"target_player_id": 5, "target_username": "qa201190374"}}
+AUDIT_EVENT {"event_type": "player_status_updated", "user_id": 1, "username": "admin", "ip_address": "172.18.0.1", "details": {"target_player_id": 11, "target_username": "astroplayer2", "old_status": "activo", "new_status": "suspendido"}}
+AUDIT_EVENT {"event_type": "admin_pdf_generated", "user_id": 1, "username": "admin", "ip_address": "172.18.0.1", "details": {"target_player_id": 11, "target_username": "astroplayer2"}}
+AUDIT_EVENT {"event_type": "global_pdf_generated", "user_id": 1, "username": "admin", "ip_address": "172.18.0.1", "details": {"date_from": "2026-05-23", "date_to": "2026-05-23"}}
+AUDIT_EVENT {"event_type": "global_pdf_generated", "user_id": 1, "username": "admin", "ip_address": "172.18.0.1", "details": {"date_from": "2026-05-20", "date_to": "2026-05-23"}}
+AUDIT_EVENT {"event_type": "mfa_setup_initiated", "user_id": 1, "username": "admin", "ip_address": "172.18.0.1", "details": {}}
+AUDIT_EVENT {"event_type": "mfa_activated", "user_id": 1, "username": "admin", "ip_address": "172.18.0.1", "details": {"method": "totp"}}
+AUDIT_EVENT {"event_type": "logout", "user_id": 1, "username": "admin", "ip_address": "172.18.0.1", "details": {}}
+AUDIT_EVENT {"event_type": "login_success", "user_id": 2, "username": "moderador1", "ip_address": "172.18.0.1", "details": {}}
+AUDIT_EVENT {"event_type": "player_status_updated", "user_id": 2, "username": "moderador1", "ip_address": "172.18.0.1", "details": {"target_player_id": 11, "target_username": "astroplayer2", "old_status": "suspendido", "new_status": "activo"}}
+AUDIT_EVENT {"event_type": "player_status_updated", "user_id": 2, "username": "moderador1", "ip_address": "172.18.0.1", "details": {"target_player_id": 5, "target_username": "qa201190374", "old_status": "suspendido", "new_status": "activo"}}
+AUDIT_EVENT {"event_type": "admin_pdf_generated", "user_id": 2, "username": "moderador1", "ip_address": "172.18.0.1", "details": {"target_player_id": 10, "target_username": "goergecodexsiu"}}
+AUDIT_EVENT {"event_type": "logout", "user_id": 2, "username": "moderador1", "ip_address": "172.18.0.1", "details": {}}
+AUDIT_EVENT {"event_type": "player_register", "user_id": 12, "username": "juan_david_medina", "ip_address": "172.18.0.1", "details": {"email": "juan@gmail.com"}}
+AUDIT_EVENT {"event_type": "login_success", "user_id": 12, "username": "juan_david_medina", "ip_address": "172.18.0.1", "details": {}}
+AUDIT_EVENT {"event_type": "score_submitted", "user_id": 12, "username": "juan_david_medina", "ip_address": "172.18.0.1", "details": {"score": 140, "level": 1}}
+AUDIT_EVENT {"event_type": "mfa_oauth2_setup_started", "user_id": 12, "username": "juan_david_medina", "ip_address": "172.18.0.1", "details": {"provider": "google"}}
+AUDIT_EVENT {"event_type": "mfa_oauth2_email_mismatch", "user_id": 12, "username": "juan_david_medina", "ip_address": "172.18.0.1", "details": {"provider_email": "mateorendonca@gmail.com"}}
+AUDIT_EVENT {"event_type": "mfa_setup_initiated", "user_id": 12, "username": "juan_david_medina", "ip_address": "172.18.0.1", "details": {}}
+AUDIT_EVENT {"event_type": "mfa_confirm_failed", "user_id": 12, "username": "juan_david_medina", "ip_address": "172.18.0.1", "details": {}}
+AUDIT_EVENT {"event_type": "mfa_activated", "user_id": 12, "username": "juan_david_medina", "ip_address": "172.18.0.1", "details": {"method": "totp"}}
+AUDIT_EVENT {"event_type": "logout", "user_id": 12, "username": "juan_david_medina", "ip_address": "172.18.0.1", "details": {}}
+AUDIT_EVENT {"event_type": "login_step1_mfa_required", "user_id": 12, "username": "juan_david_medina", "ip_address": "172.18.0.1", "details": {}}
+AUDIT_EVENT {"event_type": "mfa_login_failed", "user_id": 12, "username": "juan_david_medina", "ip_address": "172.18.0.1", "details": {}}
+AUDIT_EVENT {"event_type": "login_mfa_success", "user_id": 12, "username": "juan_david_medina", "ip_address": "172.18.0.1", "details": {}}
+AUDIT_EVENT {"event_type": "logout", "user_id": 12, "username": "juan_david_medina", "ip_address": "172.18.0.1", "details": {}}
+AUDIT_EVENT {"event_type": "login_step1_mfa_required", "user_id": 1, "username": "admin", "ip_address": "172.18.0.1", "details": {}}
+AUDIT_EVENT {"event_type": "login_mfa_success", "user_id": 1, "username": "admin", "ip_address": "172.18.0.1", "details": {}}
+AUDIT_EVENT {"event_type": "logout", "user_id": 1, "username": "admin", "ip_address": "172.18.0.1", "details": {}}
+AUDIT_EVENT {"event_type": "login_step1_mfa_required", "user_id": 12, "username": "juan_david_medina", "ip_address": "172.18.0.1", "details": {}}
+AUDIT_EVENT {"event_type": "login_mfa_success", "user_id": 12, "username": "juan_david_medina", "ip_address": "172.18.0.1", "details": {}}
+AUDIT_EVENT {"event_type": "personal_data_exported_pdf", "user_id": 12, "username": "juan_david_medina", "ip_address": "172.18.0.1", "details": {}}
+AUDIT_EVENT {"event_type": "personal_data_exported_pdf", "user_id": 12, "username": "juan_david_medina", "ip_address": "172.18.0.1", "details": {}}
+AUDIT_EVENT {"event_type": "card_registered", "user_id": 12, "username": "juan_david_medina", "ip_address": "172.18.0.1", "details": {"card_token": "tok_5dcb860ba55f4fb8aa5bbb9406230706", "last_four": "1111", "type": "visa"}}
+AUDIT_EVENT {"event_type": "token_purchase_result", "user_id": 12, "username": "juan_david_medina", "ip_address": "172.18.0.1", "details": {"package": "basico", "tokens": 10, "price": 10000, "result": "aprobada", "rejection_reason": null, "last_four": "1111"}}
+AUDIT_EVENT {"event_type": "token_purchase_result", "user_id": 12, "username": "juan_david_medina", "ip_address": "172.18.0.1", "details": {"package": "estandar", "tokens": 50, "price": 45000, "result": "aprobada", "rejection_reason": null, "last_four": "1111"}}
+AUDIT_EVENT {"event_type": "token_purchase_result", "user_id": 12, "username": "juan_david_medina", "ip_address": "172.18.0.1", "details": {"package": "premium", "tokens": 120, "price": 100000, "result": "aprobada", "rejection_reason": null, "last_four": "1111"}}
+AUDIT_EVENT {"event_type": "token_purchase_result", "user_id": 12, "username": "juan_david_medina", "ip_address": "172.18.0.1", "details": {"package": "premium", "tokens": 120, "price": 100000, "result": "aprobada", "rejection_reason": null, "last_four": "1111"}}
+AUDIT_EVENT {"event_type": "token_purchase_result", "user_id": 12, "username": "juan_david_medina", "ip_address": "172.18.0.1", "details": {"package": "premium", "tokens": 120, "price": 100000, "result": "aprobada", "rejection_reason": null, "last_four": "1111"}}
+AUDIT_EVENT {"event_type": "token_purchase_result", "user_id": 12, "username": "juan_david_medina", "ip_address": "172.18.0.1", "details": {"package": "premium", "tokens": 120, "price": 100000, "result": "aprobada", "rejection_reason": null, "last_four": "1111"}}
+AUDIT_EVENT {"event_type": "shop_item_purchased", "user_id": 12, "username": "juan_david_medina", "ip_address": "172.18.0.1", "details": {"item_id": 10, "item_name": "Mega Boost x3", "tokens_spent": 40, "balance_after": 500}}
+AUDIT_EVENT {"event_type": "shop_item_purchased", "user_id": 12, "username": "juan_david_medina", "ip_address": "172.18.0.1", "details": {"item_id": 6, "item_name": "Rainbow Trail", "tokens_spent": 35, "balance_after": 465}}
+AUDIT_EVENT {"event_type": "shop_item_purchased", "user_id": 12, "username": "juan_david_medina", "ip_address": "172.18.0.1", "details": {"item_id": 5, "item_name": "Ice Trail", "tokens_spent": 20, "balance_after": 445}}
+AUDIT_EVENT {"event_type": "personal_data_exported_pdf", "user_id": 12, "username": "juan_david_medina", "ip_address": "172.18.0.1", "details": {}}
+AUDIT_EVENT {"event_type": "card_registered", "user_id": 12, "username": "juan_david_medina", "ip_address": "172.18.0.1", "details": {"card_token": "tok_4bfc47c6515141a88da74fb8824fe0d4", "last_four": "0002", "type": "visa"}}
+AUDIT_EVENT {"event_type": "token_purchase_result", "user_id": 12, "username": "juan_david_medina", "ip_address": "172.18.0.1", "details": {"package": "premium", "tokens": 120, "price": 100000, "result": "rechazada", "rejection_reason": "fondos_insuficientes", "last_four": "0002"}}
+AUDIT_EVENT {"event_type": "card_deleted", "user_id": 12, "username": "juan_david_medina", "ip_address": "172.18.0.1", "details": {"last_four": "0002"}}
+AUDIT_EVENT {"event_type": "card_registered", "user_id": 12, "username": "juan_david_medina", "ip_address": "172.18.0.1", "details": {"card_token": "tok_8b18c155b96a482ebabf72a59463a9fc", "last_four": "0069", "type": "visa"}}
+AUDIT_EVENT {"event_type": "token_purchase_result", "user_id": 12, "username": "juan_david_medina", "ip_address": "172.18.0.1", "details": {"package": "premium", "tokens": 120, "price": 100000, "result": "rechazada", "rejection_reason": "tarjeta_vencida", "last_four": "0069"}}
+AUDIT_EVENT {"event_type": "token_purchase_result", "user_id": 12, "username": "juan_david_medina", "ip_address": "172.18.0.1", "details": {"package": "estandar", "tokens": 50, "price": 45000, "result": "aprobada", "rejection_reason": null, "last_four": "1111"}}
+AUDIT_EVENT {"event_type": "token_purchase_result", "user_id": 12, "username": "juan_david_medina", "ip_address": "172.18.0.1", "details": {"package": "premium", "tokens": 120, "price": 100000, "result": "aprobada", "rejection_reason": null, "last_four": "1111"}}
+AUDIT_EVENT {"event_type": "card_deleted", "user_id": 12, "username": "juan_david_medina", "ip_address": "172.18.0.1", "details": {"last_four": "0069"}}
+AUDIT_EVENT {"event_type": "logout", "user_id": 12, "username": "juan_david_medina", "ip_address": "172.18.0.1", "details": {}}
+AUDIT_EVENT {"event_type": "login_step1_mfa_required", "user_id": 1, "username": "admin", "ip_address": "172.18.0.1", "details": {}}
+AUDIT_EVENT {"event_type": "login_mfa_success", "user_id": 1, "username": "admin", "ip_address": "172.18.0.1", "details": {}}
+AUDIT_EVENT {"event_type": "global_pdf_generated", "user_id": 1, "username": "admin", "ip_address": "172.18.0.1", "details": {"date_from": "2026-04-01", "date_to": "2026-05-24"}}
+AUDIT_EVENT {"event_type": "global_pdf_generated", "user_id": 1, "username": "admin", "ip_address": "172.18.0.1", "details": {"date_from": "2026-04-01", "date_to": "2026-05-25"}}
+AUDIT_EVENT {"event_type": "logout", "user_id": 1, "username": "admin", "ip_address": "172.18.0.1", "details": {}}
+AUDIT_EVENT {"event_type": "login_success", "user_id": 2, "username": "moderador1", "ip_address": "172.18.0.1", "details": {}}
+AUDIT_EVENT {"event_type": "player_status_updated", "user_id": 2, "username": "moderador1", "ip_address": "172.18.0.1", "details": {"target_player_id": 12, "target_username": "juan_david_medina", "old_status": "activo", "new_status": "suspendido"}}
+AUDIT_EVENT {"event_type": "player_status_updated", "user_id": 2, "username": "moderador1", "ip_address": "172.18.0.1", "details": {"target_player_id": 11, "target_username": "astroplayer2", "old_status": "activo", "new_status": "suspendido"}}
+AUDIT_EVENT {"event_type": "player_status_updated", "user_id": 2, "username": "moderador1", "ip_address": "172.18.0.1", "details": {"target_player_id": 10, "target_username": "goergecodexsiu", "old_status": "activo", "new_status": "suspendido"}}
+AUDIT_EVENT {"event_type": "player_status_updated", "user_id": 2, "username": "moderador1", "ip_address": "172.18.0.1", "details": {"target_player_id": 9, "target_username": "georgecodexsiu", "old_status": "activo", "new_status": "suspendido"}}
+AUDIT_EVENT {"event_type": "player_status_updated", "user_id": 2, "username": "moderador1", "ip_address": "172.18.0.1", "details": {"target_player_id": 8, "target_username": "cr7", "old_status": "activo", "new_status": "suspendido"}}
+AUDIT_EVENT {"event_type": "player_status_updated", "user_id": 2, "username": "moderador1", "ip_address": "172.18.0.1", "details": {"target_player_id": 12, "target_username": "juan_david_medina", "old_status": "suspendido", "new_status": "activo"}}
+AUDIT_EVENT {"event_type": "player_status_updated", "user_id": 2, "username": "moderador1", "ip_address": "172.18.0.1", "details": {"target_player_id": 11, "target_username": "astroplayer2", "old_status": "suspendido", "new_status": "activo"}}
+AUDIT_EVENT {"event_type": "player_status_updated", "user_id": 2, "username": "moderador1", "ip_address": "172.18.0.1", "details": {"target_player_id": 10, "target_username": "goergecodexsiu", "old_status": "suspendido", "new_status": "activo"}}
+AUDIT_EVENT {"event_type": "player_status_updated", "user_id": 2, "username": "moderador1", "ip_address": "172.18.0.1", "details": {"target_player_id": 9, "target_username": "georgecodexsiu", "old_status": "suspendido", "new_status": "activo"}}
+AUDIT_EVENT {"event_type": "player_status_updated", "user_id": 2, "username": "moderador1", "ip_address": "172.18.0.1", "details": {"target_player_id": 8, "target_username": "cr7", "old_status": "suspendido", "new_status": "activo"}}
+AUDIT_EVENT {"event_type": "admin_pdf_generated", "user_id": 2, "username": "moderador1", "ip_address": "172.18.0.1", "details": {"target_player_id": 12, "target_username": "juan_david_medina"}}
+AUDIT_EVENT {"event_type": "player_status_updated", "user_id": 2, "username": "moderador1", "ip_address": "172.18.0.1", "details": {"target_player_id": 12, "target_username": "juan_david_medina", "old_status": "activo", "new_status": "suspendido"}}
+AUDIT_EVENT {"event_type": "admin_pdf_generated", "user_id": 2, "username": "moderador1", "ip_address": "172.18.0.1", "details": {"target_player_id": 12, "target_username": "juan_david_medina"}}
+AUDIT_EVENT {"event_type": "player_status_updated", "user_id": 2, "username": "moderador1", "ip_address": "172.18.0.1", "details": {"target_player_id": 12, "target_username": "juan_david_medina", "old_status": "suspendido", "new_status": "activo"}}
+AUDIT_EVENT {"event_type": "mfa_setup_initiated", "user_id": 2, "username": "moderador1", "ip_address": "172.18.0.1", "details": {}}
+AUDIT_EVENT {"event_type": "mfa_setup_cancelled", "user_id": 2, "username": "moderador1", "ip_address": "172.18.0.1", "details": {}}
+AUDIT_EVENT {"event_type": "player_register", "user_id": 13, "username": "jugadorpro", "ip_address": "172.18.0.1", "details": {"email": "pro@gmail.com"}}
+AUDIT_EVENT {"event_type": "player_register", "user_id": 14, "username": "prueba123", "ip_address": "172.18.0.1", "details": {"email": "prueba@prueba.com"}}
+AUDIT_EVENT {"event_type": "player_register", "user_id": 15, "username": "12345", "ip_address": "172.18.0.1", "details": {"email": "123@123.com"}}
+AUDIT_EVENT {"event_type": "login_failed", "user_id": null, "username": null, "ip_address": "172.18.0.1", "details": {"identifier": "123@123@gmail.com"}}
+AUDIT_EVENT {"event_type": "login_failed", "user_id": null, "username": null, "ip_address": "172.18.0.1", "details": {"identifier": "123@123@gmail.com"}}
+AUDIT_EVENT {"event_type": "player_register", "user_id": 16, "username": "wazuh", "ip_address": "172.18.0.1", "details": {"email": "wazuh@gmail.com"}}
+AUDIT_EVENT {"event_type": "login_success", "user_id": 16, "username": "wazuh", "ip_address": "172.18.0.1", "details": {}}
+AUDIT_EVENT {"event_type": "player_register", "user_id": 17, "username": "paris", "ip_address": "172.18.0.1", "details": {"email": "paris@gmail.com"}}
+AUDIT_EVENT {"event_type": "login_success", "user_id": 17, "username": "paris", "ip_address": "172.18.0.1", "details": {}}

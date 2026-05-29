@@ -1,0 +1,95 @@
+services:
+  db:
+    image: postgres:15-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-pixelforge}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-pixelforge_secret_2026}
+      POSTGRES_DB: ${POSTGRES_DB:-pixelforge}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - pixelforge-net
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U pixelforge"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  backend:
+    build: ./backend
+    restart: unless-stopped
+    environment:
+      DATABASE_URL: ${DATABASE_URL:-postgresql://pixelforge:pixelforge_secret_2026@db:5432/pixelforge}
+      SECRET_KEY: ${SECRET_KEY:?SECRET_KEY is required}
+      ALGORITHM: ${ALGORITHM:-HS256}
+      ACCESS_TOKEN_EXPIRE_MINUTES: ${ACCESS_TOKEN_EXPIRE_MINUTES:-120}
+      PARTIAL_TOKEN_EXPIRE_MINUTES: ${PARTIAL_TOKEN_EXPIRE_MINUTES:-5}
+      TOTP_ENCRYPTION_KEY: ${TOTP_ENCRYPTION_KEY:?TOTP_ENCRYPTION_KEY is required}
+      COOKIE_SECURE: ${COOKIE_SECURE:-false}
+      FRONTEND_ORIGIN: ${FRONTEND_ORIGIN:-http://localhost}
+      OAUTH2_PROVIDER: ${OAUTH2_PROVIDER:-google}
+      OAUTH2_CLIENT_ID: ${OAUTH2_CLIENT_ID:-}
+      OAUTH2_CLIENT_SECRET: ${OAUTH2_CLIENT_SECRET:-}
+      OAUTH2_AUTH_URL: ${OAUTH2_AUTH_URL:-https://accounts.google.com/o/oauth2/v2/auth}
+      OAUTH2_TOKEN_URL: ${OAUTH2_TOKEN_URL:-https://oauth2.googleapis.com/token}
+      OAUTH2_USERINFO_URL: ${OAUTH2_USERINFO_URL:-https://openidconnect.googleapis.com/v1/userinfo}
+      OAUTH2_REDIRECT_URI: ${OAUTH2_REDIRECT_URI:-http://localhost/api/mfa/oauth2/callback}
+      OAUTH2_SCOPES: ${OAUTH2_SCOPES:-openid email profile}
+      AUDIT_LOG_PATH: /app/logs/security-audit.log
+    volumes:
+      - ./logs/backend:/app/logs
+    depends_on:
+      db:
+        condition: service_healthy
+    networks:
+      - pixelforge-net
+
+  frontend:
+    build: ./frontend
+    restart: unless-stopped
+    networks:
+      - pixelforge-net
+    depends_on:
+      - backend
+
+  nginx:
+    image: nginx:alpine
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      - frontend
+      - backend
+    networks:
+      - pixelforge-net
+
+  wazuh-agent:
+    image: wazuh/wazuh-agent:4.14.5
+    hostname: pixelforge-agent
+    restart: unless-stopped
+    environment:
+      - WAZUH_MANAGER=wazuh.manager       # ← cambiado de IP a nombre DNS
+      - WAZUH_AGENT_NAME=pixelforge-app
+      - WAZUH_REGISTRATION_SERVER=wazuh.manager  # ← cambiado de IP a nombre DNS
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - /var/lib/docker/containers:/var/lib/docker/containers:ro
+      - ./logs/backend:/logs/backend:ro
+      - ./config/wazuh-agent-conf/ossec.conf:/wazuh-config-mount/etc/ossec.conf  # ← nuevo
+    networks:
+      - pixelforge-net
+      - wazuh_shared
+
+networks:
+  pixelforge-net:
+    driver: bridge
+  wazuh_shared:
+    external: true
+    name: finaljordan_wazuh_net
+
+volumes:
+  pgdata:
