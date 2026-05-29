@@ -212,26 +212,6 @@ sudo wg-quick up wg0
 
 ---
 
-##  Historias de Usuario (13/13 Implementadas)
-
-| HU | Descripción | Status | Tests |
-|---|---|---|---|
-| HU-B01 | Registro de jugador |  |  |
-| HU-B02 | Inicio de sesión |  |  |
-| HU-B03 | Registro de puntaje |  |  |
-| HU-B04 | Ranking global |  |  |
-| HU-B05 | MFA administradores |  |  |
-| HU-B06 | Verificación MFA login |  |  |
-| HU-B07 | PDF puntajes jugador |  |  |
-| HU-B08 | PDF estadísticas globales |  |  |
-| HU-B09 | MFA jugadores |  |  |
-| HU-B10 | Registro método de pago |  |  |
-| HU-B11 | Compra de paquete tokens |  |  |
-| HU-B12 | Gasto de tokens en items |  |  |
-| HU-B13 | Descarga datos personales PDF |  |  |
-
----
-
 ##  Tarjetas de Prueba
 
 | Número | Tipo | Resultado |
@@ -246,10 +226,6 @@ sudo wg-quick up wg0
 ##  Documentación
 
 - **[SECURITY-TOOLS-GUIDE.md](Proyecto%20Preliminar/SECURITY-TOOLS-GUIDE.md)** - Guía detallada de herramientas
-- **[INFORME_IEEE_DRAFT.md](INFORME_IEEE_DRAFT.md)** - Borrador del informe formal
-- **[backend/README.md](backend/README.md)** - Documentación backend
-- **[frontend/README.md](frontend/README.md)** - Documentación frontend
-
 ---
 
 ##  Análisis SAST
@@ -338,9 +314,9 @@ Esto demuestra capacidad de auditoría crítica del código generado por IA.
 
 | Nombre | Código | Rol |
 |---|---|---|
-| [Nombre 1] | [Código] | Backend Lead |
-| [Nombre 2] | [Código] | Frontend Lead |
-| [Nombre 3] | [Código] | Security & DevOps |
+| [David Garzon] | [1202476] | Backend Lead |
+| [Juan Jordan] | [1202428] | Frontend Lead |
+| [Santiago Medina] | [1202089] | Security & DevOps |
 
 ---
 
